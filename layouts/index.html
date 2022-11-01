@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    {{/* PUll boostrap via CDN */}} {{ partial "boostrap-cdn" . }}
+
+    <title>
+      {{/* If site title is present use it; otherwise use 'Simple Website' */}}
+      {{if .Site.Title}} {{.Site.Title}}{{else}} Simple Website {{end}}
+    </title>
+  </head>
+  <body>
+    <!-- Main Wrapper -->
+    <div class="main-wrapper">
+      {{/* Pull Main Navigation */}} {{ partial "main-nav" . }}
+    </div>
+  </body>
+</html>
