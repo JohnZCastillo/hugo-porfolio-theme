@@ -5,7 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    {{/* PUll boostrap via CDN */}} {{ partial "boostrap-cdn" . }}
+    {{/* PUll boostrap via CDN */}} {{ partial "boostrap-cdn" . }} {{/* Pull
+    Custom csss */}}
+
+    <link rel="stylesheet" href="/css/default.css" />
 
     <title>
       {{/* If site title is present use it; otherwise use 'Simple Website' */}}

@@ -1,0 +1,9 @@
+.main-wrapper {
+  max-width: 1400px;
+  margin: auto;
+}
+
+.right-0 {
+  right: 0 !important;
+  left: initial !important;
+}
